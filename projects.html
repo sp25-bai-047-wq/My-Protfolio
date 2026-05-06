@@ -32,6 +32,8 @@
             font-size: 0.75rem;
             z-index: 10;
         }
+        /* Heart Predictor specific badge */
+        .badge-ai { background: #ff4b2b !important; color: white !important; }
     </style>
 </head>
 <body>
@@ -58,7 +60,7 @@
 
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="project-card p-4 position-relative">
+                <div class="project-card p-4 position-relative border-0">
                     <span class="project-badge">Java (Advanced)</span>
                     <div class="mb-3">
                         <img src="images/zenspace.png" class="img-fluid rounded" alt="ZenSpace" style="height: 180px; width: 100%; object-fit: cover;">
@@ -69,7 +71,7 @@
             </div>
 
             <div class="col-md-4">
-                <div class="project-card p-4 position-relative">
+                <div class="project-card p-4 position-relative border-0">
                     <span class="project-badge">Python / Data</span>
                     <div class="mb-3">
                         <img src="images/eda.png" class="img-fluid rounded" alt="EDA" style="height: 180px; width: 100%; object-fit: cover;">
@@ -80,14 +82,22 @@
             </div>
 
             <div class="col-md-4">
-                <div class="project-card p-4 position-relative border border-primary">
-                    <span class="project-badge" style="background: #ff4b2b; color: white;">AI Model (83%)</span>
+                <div class="project-card p-4 position-relative border border-primary border-opacity-25">
+                    <span class="project-badge badge-ai">AI Model (83%)</span>
                     <div class="mb-3">
                         <img src="images/eda.png" class="img-fluid rounded" alt="ML Model" style="height: 180px; width: 100%; object-fit: cover;">
                     </div>
                     <h4 class="fw-bold">Heart Predictor</h4>
-                    <p class="text-muted small">ML model using Random Forest to predict health risks with high accuracy.</p>
-                    <a href="https://colab.research.google.com/drive/1iyTvQkCfipcM2-RDerXOG2y7JwlhMFVV?usp=sharing" target="_blank" class="btn btn-primary btn-sm w-100 mt-2">View Live Code</a>
+                    <p class="text-muted small">Interactive ML tool using Random Forest to predict heart disease risk with 83.61% accuracy.</p>
+                    
+                    <div class="d-grid gap-2 mt-3">
+                        <a href="https://heart-predictor-app-kcmlsaswo4mzk4puznvuuw.streamlit.app/" target="_blank" class="btn btn-danger btn-sm py-2 fw-bold">
+                            <i class="fas fa-rocket me-2"></i>Launch Interactive App
+                        </a>
+                        <a href="https://colab.research.google.com/drive/1iyTvQkCfipcM2-RDerXOG2y7JwlhMFVV?usp=sharing" target="_blank" class="btn btn-outline-dark btn-sm py-2">
+                            <i class="fas fa-code me-2"></i>View Model Code
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
