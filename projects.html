@@ -17,8 +17,9 @@
             transition: 0.4s;
             background: white;
             box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            height: 100%;
         }
-        .project-card:hover { transform: scale(1.03); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
+        .project-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
         .project-badge {
             position: absolute;
             top: 20px;
@@ -28,9 +29,9 @@
             padding: 5px 15px;
             border-radius: 20px;
             font-weight: 600;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
+            z-index: 10;
         }
-        .icon-box { font-size: 3rem; color: #1a2a6c; margin-bottom: 20px; }
     </style>
 </head>
 <body>
@@ -56,53 +57,40 @@
         </div>
 
         <div class="row g-4">
-            <div class="col-md-6">
-                <div class="project-card p-4 position-relative h-100">
+            <div class="col-md-4">
+                <div class="project-card p-4 position-relative">
                     <span class="project-badge">Java (Advanced)</span>
                     <div class="mb-3">
-                        <img src="images/zenspace.png" class="img-fluid rounded shadow-sm" alt="ZenSpace Dashboard" style="width: 100%; height: 200px; object-fit: cover;">
-                     </div>
-                    <h3 class="fw-bold">ZenSpace Application</h3>
-                    <p class="text-muted">Developed a full-featured Desktop Application with a Graphical User Interface (GUI). Implemented core OOP concepts including:</p>
-                    <ul>
-                        <li>Inheritance & Polymorphism</li>
-                        <li>Exception Handling</li>
-                        <li>Custom UI Design</li>
-                    </ul>
+                        <img src="images/zenspace.png" class="img-fluid rounded" alt="ZenSpace" style="height: 180px; width: 100%; object-fit: cover;">
+                    </div>
+                    <h4 class="fw-bold">ZenSpace App</h4>
+                    <p class="text-muted small">Desktop Application with GUI. Implemented Inheritance, Polymorphism & Exception Handling.</p>
                 </div>
             </div>
 
-            <div class="col-md-6">
-                <div class="project-card p-4 position-relative h-100">
-                    <span class="project-badge">Python / Excel</span>
+            <div class="col-md-4">
+                <div class="project-card p-4 position-relative">
+                    <span class="project-badge">Python / Data</span>
                     <div class="mb-3">
-    <img src="images/eda.png" class="img-fluid rounded shadow-sm" alt="Data Analysis" style="width: 100%; height: 200px; object-fit: cover;">
-</div>
-                    <h3 class="fw-bold">Exploratory Data Analysis</h3>
-                    <p class="text-muted">Analyzed complex datasets to extract meaningful insights. Used Python libraries to visualize trends and clean data for AI modeling.</p>
-                    <ul>
-                        <li>Data Visualization</li>
-                        <li>Statistical Analysis</li>
-                        <li>Pattern Recognition</li>
-                    </ul>
+                        <img src="images/eda.png" class="img-fluid rounded" alt="EDA" style="height: 180px; width: 100%; object-fit: cover;">
+                    </div>
+                    <h4 class="fw-bold">Data Analysis</h4>
+                    <p class="text-muted small">Analyzed complex datasets to extract insights and patterns for AI modeling.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="project-card p-4 position-relative border border-primary">
+                    <span class="project-badge" style="background: #ff4b2b; color: white;">AI Model (83%)</span>
+                    <div class="mb-3">
+                        <img src="images/eda.png" class="img-fluid rounded" alt="ML Model" style="height: 180px; width: 100%; object-fit: cover;">
+                    </div>
+                    <h4 class="fw-bold">Heart Predictor</h4>
+                    <p class="text-muted small">ML model using Random Forest to predict health risks with high accuracy.</p>
+                    <a href="https://colab.research.google.com/drive/1iyTvQkCfipcM2-RDerXOG2y7JwlhMFVV?usp=sharing" target="_blank" class="btn btn-primary btn-sm w-100 mt-2">View Live Code</a>
                 </div>
             </div>
         </div>
-
-        <div class="card project-card h-100 shadow-sm">
-    <img src="images/eda.png" class="card-img-top" alt="ML Project">
-    <div class="card-body p-4">
-        <span class="badge bg-danger mb-2">Machine Learning (83% Accuracy)</span>
-        <h3 class="fw-bold">Heart Disease Predictor</h3>
-        <p class="text-muted">
-            Python aur Random Forest use karke ek ML model banaya jo heart disease predict karta hai.
-        </p>
-        
-        <a href="https://colab.research.google.com/drive/1iyTvQkCfipcM2-RDerXOG2y7JwlhMFVV?usp=sharing" target="_blank" class="btn btn-primary btn-sm">
-            View Live Code (Google Colab)
-        </a>
-    </div>
-</div>
     </div>
 
     <footer class="bg-dark text-white text-center py-3 mt-5">
